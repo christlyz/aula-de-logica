@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro site</title>
+</head>
+
+<body>
+    <center>
+        <img src="img/logo.png" width="150px">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="empresa.html">Empresa</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+            <a href="cadastro.html">Cadastro</a>
+        </nav>
+        
+        <form action="enviaemail.cs" method="post">
+            <label>Nome:</label>
+                <input type="text" name="nome" value="Diego" readonly placeholder="Informe seu nome completo">
+            
+            <label>E-mail:</label>
+                <input type="email" name="email" placeholder="Defina seu E-mail" required>
+            
+            <label>Estado:</label>
+                <select name="estado">
+                    <option value="">Selecione o estado</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </select>
+
+            <label>Data de nascimento:</label>
+                <input type="date" name="data" value="data">
+
+            <label>Sexo:</label>
+                <input type="radio" name="sexo" value="M">Masculino
+                <input type="radio" name="sexo" value="F">Feminino
+            <p></p>
+
+            <label>Comidas:</label>
+                <input type="checkbox" name="comida" value="Lasanha">Lasanha
+                <input type="checkbox" name="comida" value="Pizza">Pizza
+                <input type="checkbox" name="comida" value="Hambúrguer">Hambúrguer
+
+            <label>Senha:</label>
+                <input type="password" name="senha" placeholder="Defina uma senha">
+           
+            <button type="submit">enviar</button>
+                <input type="reset" name="reset" value="limpar">
+        </form>
+    </center>
+</body>
+
+</html>

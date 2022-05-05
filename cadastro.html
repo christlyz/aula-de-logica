@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro site</title>
+</head>
+
+<body>
+    <center>
+        <img src="img/logo.png" width="150px">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="empresa.html">Empresa</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+            <a href="cadastro.html">Cadastro</a>
+        </nav>
+        
+        <form action="enviaemail.cs" method="post">
+            <h1>Cadastro</h1>
+            
+            <label>Nome:</label>
+            <input type="text" name="nome" value="" placeholder="Informe seu nome completo" required>
+            <br>
+            
+            <label>CPF:</label>
+            <input type="number" name="cpf" placeholder="Digite seu CPF" required>
+            <br>
+            
+            <label>RG:</label>
+            <input type="number" name="rg" placeholder="Digite seu RG" required>
+            <br>
+            
+            <label>Sexo:</label>
+            <input type="radio" name="sexo" value="M">Masculino
+            <input type="radio" name="sexo" value="F">Feminino
+            <br>
+            
+            <label>Nacionalidade:</label>
+            <input type="radio" name="nacionalidade" value="brasileiro">Brasileiro
+            <input type="radio" name="nacionalidade" value="outra">Outra
+            <br>
+            
+            <label>E-mail:</label>
+            <input type="email" name="email" placeholder="Defina seu E-mail" required>
+            <br>
+            
+            <label>Telefone:</label>
+            <input type="number" name="telefone" placeholder="Número para contato" required>
+            <br>
+            
+            <label>Telefone 2:</label>
+            <input type="number" name="telefone-2" placeholder="Segundo número">
+            <br>
+            
+            <label>Rua:</label>
+            <input type="text" name="rua" value="" placeholder="Informe o nome da sua rua" required>
+            <br>
+            
+            <label>Número:</label>
+            <input type="number" name="numero" value="" placeholder="Informe o número da sua casa" required>
+            <br>
+            
+            <label>Complemento:</label>
+            <input type="number" name="complemento" value="" placeholder="ex: ap" required>
+            <br>
+            
+            <label>Bairro:</label>
+            <input type="text" name="bairro" value="" placeholder="Informe o seu bairro" required>
+            <br>
+            
+            <label>Cidade:</label>
+            <input type="text" name="cidade" value="" placeholder="Informe a sua cidade" required>
+            <br>
+            
+            <label>Estado:</label>
+            <input type="text" name="esatado" value="" placeholder="Informe o seu estado" required>
+            <br>
+            <button type="reset">LIMPAR</button>
+            <button type="submit">ENVIAR</button>
+        </center>
+        </form>
+    </body>
+    
+    </html>
