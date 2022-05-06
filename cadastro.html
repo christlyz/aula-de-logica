@@ -19,7 +19,7 @@
             <a href="cadastro.html">Cadastro</a>
         </nav>
         
-        <form action="enviaemail.cs" method="post">
+        <form action="enviaemail.cs" method="post" autocomplete="on" enctype="multipart/form-data">
             <h1>Cadastro</h1>
             
             <label>Nome:</label>
@@ -27,11 +27,11 @@
             <br>
             
             <label>CPF:</label>
-            <input type="number" name="cpf" placeholder="Digite seu CPF" required>
+            <input type="number" name="cpf" value="" placeholder="Digite seu CPF" required autocomplete="off">
             <br>
             
             <label>RG:</label>
-            <input type="number" name="rg" placeholder="Digite seu RG" required>
+            <input type="number" name="rg" value="" placeholder="Digite seu RG" required autocomplete="off">
             <br>
             
             <label>Sexo:</label>
@@ -45,15 +45,15 @@
             <br>
             
             <label>E-mail:</label>
-            <input type="email" name="email" placeholder="Defina seu E-mail" required>
+            <input type="email" name="email" value="" placeholder="Defina seu E-mail" required>
             <br>
-            
+    
             <label>Telefone:</label>
-            <input type="number" name="telefone" placeholder="Número para contato" required>
+            <input type="number" name="telefone" value="" placeholder="Número para contato" required>
             <br>
             
             <label>Telefone 2:</label>
-            <input type="number" name="telefone-2" placeholder="Segundo número">
+            <input type="number" name="telefone-2" value="" placeholder="Segundo número">
             <br>
             
             <label>Rua:</label>
@@ -65,7 +65,7 @@
             <br>
             
             <label>Complemento:</label>
-            <input type="number" name="complemento" value="" placeholder="ex: ap" required>
+            <input type="text" name="complemento" value="" placeholder="ex: ap" required>
             <br>
             
             <label>Bairro:</label>

@@ -19,9 +19,9 @@
             <a href="cadastro.html">Cadastro</a>
         </nav>
         
-        <form action="enviaemail.cs" method="post">
+        <form action="enviaemail.cs" method="post" autocomplete="on" enctype="multipart/form-data">
             <label>Nome:</label>
-                <input type="text" name="nome" value="Diego" readonly placeholder="Informe seu nome completo">
+                <input type="text" name="nome" value="" placeholder="Informe seu nome completo">
             
             <label>E-mail:</label>
                 <input type="email" name="email" placeholder="Defina seu E-mail" required>
@@ -29,7 +29,7 @@
             <label>Estado:</label>
                 <select name="estado">
                     <option value="">Selecione o estado</option>
-                    <option value="SC">Santa Catarina</option>
+                    <option value="SC" selected>Santa Catarina</option>
                     <option value="PR">Paraná</option>
                     <option value="RS">Rio Grande do Sul</option>
                 </select>
@@ -38,17 +38,24 @@
                 <input type="date" name="data" value="data">
 
             <label>Sexo:</label>
-                <input type="radio" name="sexo" value="M">Masculino
+                <input type="radio" name="sexo" value="M" checked>Masculino
                 <input type="radio" name="sexo" value="F">Feminino
             <p></p>
 
             <label>Comidas:</label>
                 <input type="checkbox" name="comida" value="Lasanha">Lasanha
                 <input type="checkbox" name="comida" value="Pizza">Pizza
-                <input type="checkbox" name="comida" value="Hambúrguer">Hambúrguer
+                <input type="checkbox" name="comida" value="Hambúrguer" checked>Hambúrguer
 
             <label>Senha:</label>
-                <input type="password" name="senha" placeholder="Defina uma senha">
+                <input type="password" name="senha" placeholder="Defina uma senha" minlength="8" maxlength="10">
+
+                <label>Foto</label>
+                <input type="file" name="foto" multiple>
+
+                <textarea name="mensagem" cols="175" rows="10" required></textarea>
+
+                <input type="hidden" name="codigoIbge" value="1058483">
            
             <button type="submit">enviar</button>
                 <input type="reset" name="reset" value="limpar">
