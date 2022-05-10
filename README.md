@@ -6,3 +6,5 @@ estudar html: w3schools
               Maujor.com
               Materialize CSS
               Bootstrap
+
+              https://www.ime.usp.br/~glauber/html/acentos.htm
