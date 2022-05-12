@@ -8,3 +8,6 @@ estudar html: w3schools
               Bootstrap
 
               https://www.ime.usp.br/~glauber/html/acentos.htm
+
+border generator: https://border-radius.com/
+shadow generator: https://html-css-js.com/css/generator/box-shadow/
