@@ -48,12 +48,13 @@ main{
     box-shadow: 0px 0px 7px 0px #000000;
     padding: 15px;
     display: inline-block;
+    min-height: 187px;
 }
 .homeArticle img{
     float: left;
     margin-right: 10px;
     border: 1px solid black;
-    border-radius: 60px;
+    border-radius: 25px;
 }
 .homeArticle h2{
     font-size: 15px;
@@ -62,20 +63,19 @@ main{
 }
 .homeArticle p{
     font-style: italic;
+    min-height: 72px;
 }
 .homeArticle a{
-    display: inline-block;
-    width: auto;
-    padding: 4px;
-    background: rgb(150, 4, 4);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 10px;
+    width: 100px;
+    display: block;
+    position: relative;
     float: right;
-    transition:
-    0.15s padding ease-out, 
-    0.15s margin ease-out, 
-    0.15s border ease-out;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: rgb(150, 4, 4);
+    border-radius: 10px;
 }
 .homeArticle a:hover{
     background: rgb(224, 1, 1);
@@ -83,7 +83,56 @@ main{
     padding: 6px;
     border-radius: 15px;
     transition:
-    0.15s padding ease-out, 
-    0.15s margin ease-out, 
+    0.15s padding ease-out,
     0.15s border ease-out;
+}
+
+/* estilos do carousel */
+.carousel{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+.carousel li{
+    height: 175px;
+    width: 300px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 1%;
+}
+.carousel li img{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    background: rgb(150, 4, 4);
+}
+footer span{
+    display: inline-block;
+    width: 48%;
+    padding: 10px;
+    color: #fff;
+}
+footer .direitos {
+    text-align: left;
+}
+footer .direitos a{
+    color: #fff;
+}
+footer .assinatura{
+    text-align: right;
+}
+footer .assinatura a{
+    color: #fff;
+    text-decoration: none;
+}
+footer .assinatura a:hover{
+    text-decoration: underline;
+    background-size: 15%;
 }
