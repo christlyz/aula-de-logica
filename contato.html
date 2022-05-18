@@ -9,11 +9,11 @@
     <title>Meu primeiro site</title>
 </head>
 
-<body>
-    <main>
+<body class="pageContato">
+    <main class="mainContato">
         <center>
             <nav>
-                <img src="img/g1-logo.png" class="logoSite">
+            <i class="icofont-rocket icofont-5x"></i>
             <a href="index.html">Home</a>
             <a href="empresa.html">Empresa</a>
             <a href="servicos.html">Serviços</a>
@@ -22,45 +22,45 @@
         </nav>
         
         <form action="enviaemail.cs" method="post" autocomplete="on" enctype="multipart/form-data">
-            <label>Nome:</label>
-                <input type="text" name="nome" value="" placeholder="Informe seu nome completo">
+            <h1>Por favor preencha os campos para contato</h1>
+            <div class="Inteiro">
+                <label class="labelNome">Nome:</label>
+                <input class="inputNome" type="text" name="nome" value="" placeholder="Informe seu nome completo" required>
+            </div>
             
-            <label>E-mail:</label>
-                <input type="email" name="email" placeholder="Defina seu E-mail" required>
+            <div class="Metade">
+                <label class="labelEmail">E-mail:</label>
+                <input class="inputEmail" type="email" name="email" placeholder="Defina seu E-mail" required>
+            </div>
             
-            <label>Estado:</label>
-                <select name="estado">
-                    <option value="">Selecione o estado</option>
-                    <option value="SC" selected>Santa Catarina</option>
-                    <option value="PR">Paraná</option>
-                    <option value="RS">Rio Grande do Sul</option>
+            <div class="Metade">
+                <label class="labelWhats">Whatsapp:</label>
+                <input class="inputWhats" type="number" name="numero" placeholder="Informe seu número de celular" required>
+            </div>
+
+            <div class="Inteiro">
+                <label class="labelSetor">Setor:</label>
+                <select name="setor" class="selectSetor">
+                    <option value="">Selecione o setor</option>
+                    <option value="rh">RH</option>
+                    <option value="vendas">Vendas</option>
+                    <option value="financeiro">Financeiro</option>
+                    <option value="comercial">Comercial</option>
                 </select>
-                
-                <label>Data de nascimento:</label>
-                <input type="date" name="data" value="data">
+            </div>
 
-            <label>Sexo:</label>
-                <input type="radio" name="sexo" value="M">Masculino
-                <input type="radio" name="sexo" value="F">Feminino
-            <p></p>
-            
-            <label>Comidas:</label>
-                <input type="checkbox" name="comida" value="Lasanha">Lasanha
-                <input type="checkbox" name="comida" value="Pizza">Pizza
-                <input type="checkbox" name="comida" value="Hambúrguer">Hambúrguer
+            <div class="Inteiro">
+                <label>Sua mensagem</label>
+                <textarea class="texto" name="mensagem" required></textarea>
+            </div>
                 
-            <label>Senha:</label>
-                <input type="password" name="senha" placeholder="Defina uma senha" minlength="8" maxlength="10">
-                
-                <label>Foto</label>
-                <input type="file" name="foto" multiple>
-
-                <textarea name="mensagem" cols="175" rows="10" required></textarea>
-                
-                <input type="hidden" name="codigoIbge" value="1058483">
-                
+            <div class="Enviar">
                 <button type="submit">enviar</button>
-                <input type="reset" name="reset" value="limpar">
+            </div>
+
+            <div class="Limpar">
+                <button type="reset">limpar</button>
+            </div>
         </form>
     </center>
 </main>
